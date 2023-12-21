@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 16 14:48:38 2023
+# Process ID: 34572
+# Current directory: C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/impl_1
+# Command line: vivado.exe -log main_control.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main_control.tcl -notrace
+# Log file: C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/impl_1/main_control.vdi
+# Journal file: C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main_control.tcl -notrace

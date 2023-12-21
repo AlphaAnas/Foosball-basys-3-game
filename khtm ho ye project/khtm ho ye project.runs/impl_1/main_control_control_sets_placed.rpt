@@ -1,0 +1,99 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Dec 16 14:49:13 2023
+| Host         : HU-DOPX-DIL05 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_control_sets_placed.rpt
+| Design       : main_control
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           16 |
+| No           | No                    | Yes                    |               4 |            3 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |              29 |           11 |
+| Yes          | No                    | Yes                    |             345 |          105 |
+| Yes          | Yes                   | No                     |              10 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |                    Enable Signal                    |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+-----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/vertical_scanning_buffer            |                                         |                1 |              1 |         1.00 |
+|  nolabel_line83/inst/clk_out1 | start_IBUF                                          | reset_IBUF                              |                1 |              1 |         1.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/y_counter                           | nolabel_line118/y_counter[6]_i_1_n_0    |                1 |              2 |         2.00 |
+|  nolabel_line83/inst/clk_out1 |                                                     | reset_IBUF                              |                3 |              4 |         1.33 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line115/horizontal_velocity_reg[31]_i_1_n_0 | reset_IBUF                              |                2 |              4 |         2.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/ps2/n_next                           |                                         |                1 |              4 |         4.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line115/E[0]                                | player1_score1                          |                1 |              4 |         4.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line115/ball_c_l_reg[31]_0[0]               | player2_score1                          |                1 |              4 |         4.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/y_counter                           |                                         |                3 |              6 |         2.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/x_counter                           | nolabel_line118/x_counter[8]_i_1_n_0    |                3 |              8 |         2.67 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/ps2/rx_done_tick                     |                                         |                2 |              8 |         4.00 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/counter_h                           | reset_IBUF                              |                4 |             10 |         2.50 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line118/counter_v                           | reset_IBUF                              |                4 |             10 |         2.50 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/ps2/b_next                           |                                         |                4 |             10 |         2.50 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/refresh_reg_reg[8]_2                 | reset_IBUF                              |                8 |             31 |         3.88 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/refresh_reg_reg[8]                   | reset_IBUF                              |                8 |             31 |         3.88 |
+|  nolabel_line83/inst/clk_out1 |                                                     | nolabel_line115/refresh_reg[31]_i_1_n_0 |                9 |             32 |         3.56 |
+|  nolabel_line83/inst/clk_out1 |                                                     |                                         |               16 |             39 |         2.44 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line115/refresh_rate                        | reset_IBUF                              |               28 |             64 |         2.29 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/refresh_reg_reg[8]_1                 | reset_IBUF                              |               24 |             93 |         3.88 |
+|  nolabel_line83/inst/clk_out1 | nolabel_line86/refresh_reg_reg[8]_0                 | reset_IBUF                              |               24 |             93 |         3.88 |
++-------------------------------+-----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,416 @@
+
+*** Running vivado
+    with args -log main_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_control.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source main_control.tcl -notrace
+Command: synth_design -top main_control -part xc7a35tcpg236-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/clk_wiz_0/clk_wiz_0.xci
+
+INFO: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.3) has a newer major version in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1029.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_control' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/main_control.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_1' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/keyboard_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/ps2_rx.v:24]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/ps2_rx.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (2#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/ps2_rx.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_1' (3#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/keyboard_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anim_gen' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:20]
+	Parameter leftbar1_l bound to: 5 - type: integer 
+	Parameter leftbar1_thickness bound to: 10 - type: integer 
+	Parameter leftbar1_w bound to: 100 - type: integer 
+	Parameter leftbar1_v bound to: 10 - type: integer 
+	Parameter leftbar2_l bound to: 130 - type: integer 
+	Parameter leftbar2_thickness bound to: 10 - type: integer 
+	Parameter leftbar2_w bound to: 60 - type: integer 
+	Parameter leftbar2_v bound to: 6 - type: integer 
+	Parameter rightbar1_l bound to: 625 - type: integer 
+	Parameter rightbar1_thickness bound to: 10 - type: integer 
+	Parameter rightbar1_w bound to: 100 - type: integer 
+	Parameter rightbar1_v bound to: 10 - type: integer 
+	Parameter rightbar2_l bound to: 500 - type: integer 
+	Parameter rightbar2_thickness bound to: 10 - type: integer 
+	Parameter rightbar2_w bound to: 60 - type: integer 
+	Parameter rightbar2_v bound to: 6 - type: integer 
+	Parameter ball_default_c_t bound to: 240 - type: integer 
+	Parameter ball_default_c_l bound to: 320 - type: integer 
+	Parameter ball_r bound to: 8 - type: integer 
+	Parameter horizontal_velocity bound to: 3 - type: integer 
+	Parameter vertical_velocity bound to: 3 - type: integer 
+	Parameter refresh_constant bound to: 830000 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:231]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:233]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:239]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:258]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:260]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:289]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:291]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:295]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:312]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:315]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:322]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:343]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:346]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:353]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:378]
+WARNING: [Synth 8-567] referenced signal 'leftbar1_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:399]
+WARNING: [Synth 8-567] referenced signal 'scorer' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'rightbar1_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'rightbar2_up_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'rightbar2_md_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'rightbar2_lw_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'leftbar2_up_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'leftbar2_md_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'leftbar2_lw_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-567] referenced signal 'leftbar1_t' should be on the sensitivity list [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:630]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:631]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:632]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:633]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:634]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:635]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:636]
+INFO: [Synth 8-6155] done synthesizing module 'anim_gen' (4#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/anim_gen.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'sync_mod' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:17]
+	Parameter HR bound to: 640 - type: integer 
+	Parameter HFP bound to: 16 - type: integer 
+	Parameter HBP bound to: 48 - type: integer 
+	Parameter HT bound to: 96 - type: integer 
+	Parameter VR bound to: 480 - type: integer 
+	Parameter VFP bound to: 10 - type: integer 
+	Parameter VBP bound to: 33 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:95]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:105]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:130]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:136]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:144]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:146]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:160]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:160]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:162]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:177]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:179]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:181]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:200]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:200]
+INFO: [Synth 8-6155] done synthesizing module 'sync_mod' (5#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/vga.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/SevenSegment.sv:34]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (6#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/SevenSegment.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'main_control' (7#1) [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/main_control.sv:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1029.668 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'nolabel_line83'
+Finished Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'nolabel_line83'
+Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc:104]
+Finished Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/main_control_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.srcs/sources_1/new/pong_game.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1061.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1061.031 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1061.031 ; gain = 31.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1061.031 ; gain = 31.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/.Xil/Vivado-33656-HU-DOPX-DIL05/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for nolabel_line83. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1061.031 ; gain = 31.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                     dps |                              010 |                               01
+                    load |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1061.031 ; gain = 31.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 8     
+	   2 Input   32 Bit       Adders := 28    
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 13    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	  14 Input   15 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 16    
+	  14 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP display_ball1, operation Mode is: A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: Generating DSP display_ball1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+DSP Report: operator display_ball1 is absorbed into DSP display_ball1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1061.031 ; gain = 31.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|anim_gen    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|anim_gen    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1082.301 ; gain = 52.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1156.758 ; gain = 127.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |   529|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |   319|
+|5     |LUT2    |  1268|
+|6     |LUT3    |    76|
+|7     |LUT4    |   576|
+|8     |LUT5    |    99|
+|9     |LUT6    |    86|
+|10    |MUXF7   |     1|
+|11    |FDCE    |   317|
+|12    |FDPE    |    32|
+|13    |FDRE    |   110|
+|14    |IBUF    |     4|
+|15    |OBUF    |    26|
+|16    |OBUFT   |     3|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1165.445 ; gain = 104.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1165.445 ; gain = 135.777
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1171.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 536 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1171.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1171.273 ; gain = 141.605
+INFO: [Common 17-1381] The checkpoint 'C:/Users/si07886/OneDrive - Habib University/khtm ho ye project/khtm ho ye project/khtm ho ye project.runs/synth_1/main_control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_control_utilization_synth.rpt -pb main_control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 14:48:31 2023...
